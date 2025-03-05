@@ -1,0 +1,105 @@
+/* App.css */
+
+body, html, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  position: relative;
+  background: #f8f9fa;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo .logo {
+  width: 100px;
+  display: flex;
+  justify-items: start;
+  align-items: start;
+}
+
+.index a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hamburger-label {
+  display: none;
+  background: none;
+  border: none;
+}
+
+/* 手機版顯示漢堡選單 */
+@media (max-width: 768px) {
+  .index {
+    display: none;
+  }
+  .hamburger-label {
+    display: block;
+  }
+  .hamburger_menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .hamburger_menu a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+/* Banner */
+.banner {
+  background: url('./res/homepage.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.banner_h1 {
+  font-size: 3rem;
+  margin: 0 0 20px;
+}
+
+.banner_p {
+  font-size: 1.2rem;
+  margin: 0 0 20px;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
